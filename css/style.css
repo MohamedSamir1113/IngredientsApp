@@ -1,0 +1,140 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+
+
+.loading-screen{
+	inset: 0;
+	z-index: 99999;
+	background-color: #000;
+	display: flex;
+}
+
+body {
+	
+	overflow: hidden;
+	background-color: #000;
+}
+
+li {
+	list-style: none !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+i {
+	cursor: pointer;
+}
+
+.navHeader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100%;
+	z-index: 55555555;
+	background-color: #f8f6f6;
+	text-align: center;
+
+
+}
+
+.toggleBtn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	
+}
+
+.toggleBtn i {
+	font-size: 25px;
+}
+
+.socialIcons {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 11;
+}
+
+.navMenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100vh;
+	z-index: 99999;
+	background-color: black;
+	transform: translateX(-100%);
+}
+
+.navMenu ul {
+	padding-left: 30px;
+	padding-top: 15px;
+
+	overflow: hidden;
+
+}
+
+.navMenu li {
+	padding-bottom: 15px;
+	padding-top: 500px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.navMenu ul li a {
+	color: #f9f6f6;
+
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.navSocials {
+	position: absolute;
+	bottom: 50px;
+	left: 20px;
+}
+
+#recipes,#tags
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.layer
+{
+    
+    position: absolute;
+    top: 110%;
+    left: 0;
+	bottom: 0;
+	right: 0;
+    background-color: rgba(255,255,255,.7);
+    text-align: center;
+	color:#000;
+	font-weight: 800;
+	transition: all 1s;
+	cursor: pointer;
+}
+.item
+
+{
+    overflow: hidden;
+	cursor: pointer;
+}
+.item:hover .layer
+{
+	top: 0;
+	transition: all 1s;
+}
